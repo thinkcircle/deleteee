@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<p>Took you long enough to get here.</p>
+		<p>I grew quite hungry while waiting, so do me a favour and cut me 10 slices of my favourite dessert. I'm quite picky, so remove all the dots and make sure you convert. BASEd on this knowledge the password is an easy find. 12 is a good number, just keep that in mind.</p>
+		<button onclick="myFunction()"> Enter Password </button>
+		<p id = "demo" ></p>
+
+		<script>
+		function myFunction() {
+			var text;
+			var password = prompt("Input Password:");
+			
+			switch(password) {
+				case "738143379":
+					text = "Password Accepted.";
+					window.location.href = 'https://docs.google.com/document/d/13KAurfw_Znu_VHPA6-qY3v3A6oRmuib_1dlJOMu76q8/edit'; 
+					
+					break;
+				default:
+					text = "Incorrect Password.";
+			}
+			document.getElementById("demo").innerHTML = text;
+		}
+		</script>
+		
+	</body>
+</html>
